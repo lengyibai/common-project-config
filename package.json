@@ -1,0 +1,48 @@
+{
+  "name": "lyb-project-config",
+  "version": "1.0.3",
+  "description": "Shared ESLint / Prettier / tsconfig / less variables",
+  "type": "module",
+  "exports": {
+    "./prettier": "./prettier/index.cjs",
+    "./eslint": "./eslint/index.cjs",
+    "./tsconfig": "./tsconfig.json",
+    "./less": "./less/index.less"
+  },
+  "files": [
+    "prettier/",
+    "eslint/",
+    "less/",
+    "tsconfig.json"
+  ],
+  "keywords": [
+    "冷弋白",
+    "lengyibai",
+    "lyb",
+    "lyb-project-config"
+  ],
+  "peerDependencies": {
+    "@types/node": "^24",
+    "@typescript-eslint/eslint-plugin": "^7",
+    "@typescript-eslint/parser": "^7",
+    "eslint": "^8",
+    "eslint-plugin-import": "^2",
+    "prettier": "^3",
+    "vite": "^6",
+    "stylelint": "^15.10.0",
+    "stylelint-config-recess-order": "^4.3.0",
+    "stylelint-config-standard": "^34.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lengyibai/lyb-project-config.git"
+  },
+  "devDependencies": {
+    "@types/node": "^24.5.2",
+    "vite": "^6.3.6"
+  }
+}

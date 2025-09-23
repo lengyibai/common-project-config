@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "allowJs": true, // 允许编译 JS 文件
+    "baseUrl": "./", // 模块解析的基准目录
+    "isolatedModules": true, // 确保每个文件可单独编译（适配 Babel/ts-loader）
+    "module": "ESNext", // 使用最新的模块系统
+    "moduleResolution": "Bundler", // 模块解析策略（适配现代打包工具，如 Vite）
+    "noEmit": true, // 不输出编译结果（只做类型检查）
+    "resolveJsonModule": true, // 允许导入 .json 文件
+    "skipLibCheck": true, // 跳过库文件检查，加快编译
+    "strict": true, // 开启所有严格模式检查
+    "target": "ESNext", // 生成的 JS 目标版本
+    "noUnusedLocals": true, // 检查未使用的局部变量
+    "strictNullChecks": true, // 检查空值（null/undefined）
+    "noImplicitThis": true, // 检查 this 是否隐式 any
+    "noUnusedParameters": true, // 检查未使用的函数参数
+    "types": ["node", "vite/client"],
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  }
+}

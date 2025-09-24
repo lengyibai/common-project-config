@@ -1,19 +1,21 @@
 {
   "name": "lyb-project-config",
-  "version": "1.0.3",
+  "version": "1.1.2",
   "description": "Shared ESLint / Prettier / tsconfig / less variables",
   "type": "module",
   "exports": {
     "./prettier": "./prettier/index.cjs",
     "./eslint": "./eslint/index.cjs",
-    "./tsconfig": "./tsconfig.json",
-    "./less": "./less/index.less"
+    "./stylelint": "./stylelint/index.cjs",
+    "./less": "./less/index.less",
+     "./tsconfig": "./tsconfig.base.json"
   },
   "files": [
     "prettier/",
     "eslint/",
+    "stylelint/",
     "less/",
-    "tsconfig.json"
+    "tsconfig.base.json"
   ],
   "keywords": [
     "冷弋白",
@@ -29,9 +31,10 @@
     "eslint-plugin-import": "^2",
     "prettier": "^3",
     "vite": "^6",
-    "stylelint": "^15.10.0",
-    "stylelint-config-recess-order": "^4.3.0",
-    "stylelint-config-standard": "^34.0.0"
+    "stylelint": "^16",
+    "stylelint-config-recess-order": "^7",
+    "stylelint-config-standard": "^39",
+    "stylelint-order": "^7"
   },
   "publishConfig": {
     "access": "public"

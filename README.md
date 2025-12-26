@@ -55,6 +55,7 @@ module.exports = {
 
 ```json
 "devDependencies": {
+  "@types/node": "^25.0.3",
   "@rushstack/eslint-patch": "^1.10.3",
   "@tsconfig/node18": "^18.2.4",
   "@types/nprogress": "^0.2.3",

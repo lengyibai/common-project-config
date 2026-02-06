@@ -14,6 +14,7 @@
     "strictNullChecks": true, // 检查空值（null/undefined）
     "noImplicitThis": true, // 检查 this 是否隐式 any
     "noUnusedParameters": true, // 检查未使用的函数参数
+    "verbatimModuleSyntax":true, // 类型导入需要加type前缀
     "types": ["node", "vite/client"]
   }
 }

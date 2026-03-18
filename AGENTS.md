@@ -95,6 +95,7 @@ type Lang = 'zh' | 'en';
 - 页面功能模块较多时，可按区块抽成组件，避免单文件代码过多
 - Vue 文件中可解耦的复杂功能逻辑应拆分为一个或多个 hooks，避免 `script` 中存在过多逻辑代码
 - `ref` 绑定对象或者数组时，类型使用 `ref<xxx>()` 的泛型写法
+- 不要在模板标签里使用类型断言（例如 `as` 断言）
 
 ## Vue 文件代码排版
 
@@ -187,6 +188,6 @@ const tabIndex = defineModel<number>("tabIndex", { required: true });
 
 - CSS 中出现重复的颜色或尺寸时，可在顶部定义 CSS 变量复用
 - 必要时可使用 Less 函数
-- 使用 CSS 嵌套提高结构清晰度
+- 使用 less 嵌套提高结构清晰度
 - 编写 Less 时按 DOM 树结构进行嵌套
 

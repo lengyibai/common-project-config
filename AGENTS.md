@@ -133,6 +133,7 @@ const $emit = defineEmits<{
 ```
 
 - `defineProps` 统一使用以下格式：
+- 如果只是为了在模板中使用 Props，不要额外写 `const props = defineProps<Props>()`，直接使用 `defineProps<Props>()` 即可
 
 ```ts
 interface Props {

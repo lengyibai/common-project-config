@@ -191,6 +191,4 @@ const tabIndex = defineModel<number>("tabIndex", { required: true });
 
 - CSS 中出现重复的颜色或尺寸时，可在顶部定义 CSS 变量复用
 - 必要时可使用 Less 函数
-- 使用 less 嵌套提高结构清晰度
-- 编写 Less 时按 DOM 树结构进行嵌套
-
+- Less 以嵌套方式提高结构清晰度，并按对应 Vue 模板的 DOM 树结构组织样式层级

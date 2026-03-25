@@ -85,6 +85,7 @@ type Lang = 'zh' | 'en';
 - 函数统一使用箭头函数
 - 若文件内的参数类型或泛型较长，在当前文件顶部定义 `interface` 或 `type`
 - 当函数、组件或工具对象的参数本身已有默认值时，不要显式传递该默认值；只传非默认值，避免冗余配置
+- 使用 Pinia 时统一采用组合式 API 写法，优先使用 `defineStore` 配合 `ref`、`computed` 和 `storeToRefs`
 
 ## Vue
 
@@ -93,6 +94,9 @@ type Lang = 'zh' | 'en';
 - 布尔属性为真时（如 `:xxx="true"`），可以直接写成 `xxx`
 - 页面结构顺序：`<script>` 在顶部，其次 `<template>`，最后 `<style>`
 - 组件必须单独建文件夹，文件夹内包含 `index.vue`
+- 每一个 UI 模块都应优先抽离为组件；只会在当前页面使用的组件，放在该 `index.vue` 所在文件夹下的 `components` 文件夹中
+- 如果组件具备全局复用价值，统一放在 `src/components` 中；如果按钮类型较多，可在 `src/components/buttons` 下按按钮类型继续拆分
+- 仅会使用一次的组件，不要提升到全局目录，直接放在当前页面文件夹下的 `components` 中即可
 - 当 Vue 文件中 `style` 标签内的 CSS 超过 50 行时，再抽离到 `index.less`
 - 页面出现循环列表时，可将列表元素抽成组件，并在当前页面文件夹下创建 `components` 文件夹存放
 - 页面功能模块较多时，可按区块抽成组件，避免单文件代码过多

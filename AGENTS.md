@@ -86,6 +86,8 @@ type Lang = 'zh' | 'en';
 - 若文件内的参数类型或泛型较长，在当前文件顶部定义 `interface` 或 `type`
 - 当函数、组件或工具对象的参数本身已有默认值时，不要显式传递该默认值；只传非默认值，避免冗余配置
 - 使用 Pinia 时统一采用组合式 API 写法，优先使用 `defineStore` 配合 `ref`、`computed` 和 `storeToRefs`
+- Pinia 的 store 定义名称使用大驼峰，例如 `AuthStore`
+- 使用 store 时，变量名统一写成 `$authStore = AuthStore()` 这种形式
 
 ## Vue
 
